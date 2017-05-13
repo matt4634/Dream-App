@@ -15,5 +15,5 @@ class MakePost(View):
         new_post.save()
         newDict = []
         newDict.append(new_post)
-        return HttpResponseRedirect("/view")
+        return render(request,'view.html')
 
